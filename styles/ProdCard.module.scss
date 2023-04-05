@@ -1,0 +1,64 @@
+.prod_card {
+    display: block;
+    max-width: 15rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem black;
+    padding: 1rem;
+    transition: all ease 0.3s;
+    &:hover {
+        transform: scale(1.05);
+    }
+    .thumb {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        border-radius: 1rem;
+        overflow: hidden;
+        &:hover {
+            img {
+                transform: scale(1.08);
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+            transition: all ease 0.3s;
+        }
+    }
+    .title {
+        color: black;
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    .txtDesc {
+        color: black;
+        font-size: 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .prices {
+            font-size: 1.6rem;
+            padding: 1rem 0;
+            .price {
+                color: rgb(156, 6, 6);
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+            .oldPrice {
+                text-decoration: line-through;
+                font-size: 1rem;
+            }
+        }
+    }
+}
